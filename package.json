@@ -1,0 +1,26 @@
+{
+  "name": "Friendly Engine",
+  "version": "0.0.1",
+  "description": "◈",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "markphd",
+  "license": "ISC",
+  "dependencies": {
+    "normalize.css": "^3.0.3",
+    "nouislider": "^9.2.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.9.12",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-minify-css": "^1.2.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-uglify": "^1.4.2"
+  }
+}

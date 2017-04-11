@@ -1,0 +1,323 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0')
+    link(rel='stylesheet', type='text/css', href='css/base.css')
+    link(rel='stylesheet', type='text/css', href='css/main.css')
+    link(rel='stylesheet', type='text/css', href='dist/css/range-slider.css')
+  body
+    nav
+      div Imagewall
+    .view-buttons
+      button.js-app App Mode
+      span ZOOM
+      button.js-minus -
+      button.js-plus +
+    .menu
+      .menu-title
+        .menu-title__name Untitled Imagewall...
+        .menu-title__application
+          | Freestanding Application
+          svg(width='8px', height='6px', viewbox='221 125 8 6', version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink')
+            polyline#Path-15(stroke='#979797', stroke-width='2', fill='none', points='222 126 225 129 228 126')
+      .panes
+        // PANE 1
+        .pane.pane-1
+          h5
+            | Wall Size 
+            span.larger Larger?
+          label
+            | Width
+            br
+            input#width.slider-input(type='range', min='1', max='200', value='20')
+            input#width-text.text-input(value='20')
+            span ft
+            span.slider-label 0
+            span.slider-label.label-right 200+
+          label
+            | Height
+            br
+            input#height.slider-input(type='range', min='1', max='100', value='8')
+            input#width-text.text-input(value='8')
+            span ft
+            span.slider-label 0
+            span.slider-label.label-right 100+
+          div
+            h5.card-options__label Image or Pattern
+            .card-option.js-card(data-type='image')
+              .image
+                .image-block
+              .text
+                .text-title Custom Image
+                .text-detail Crop-to-Fit · Contrasted
+              .arrow
+                svg(width='11px', height='20px', viewbox='302 331 11 20', version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink')
+                  polyline#Path-10(stroke='#E6E6E6', stroke-width='2', fill='none', points='303 332 311 341 303 350')
+          .card-options
+            h5.card-options__label Options
+            .card-option.js-card(data-type='grid')
+              .image
+                .image-block
+              .text
+                .text-title Grid
+                .text-detail Staggered · Contrasted
+              .arrow
+                svg(width='11px', height='20px', viewbox='302 331 11 20', version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink')
+                  polyline#Path-10(stroke='#E6E6E6', stroke-width='2', fill='none', points='303 332 311 341 303 350')
+            .card-option.js-card(data-type='perforation')
+              .image
+                .image-block
+              .text
+                .text-title Perforation
+                .text-detail Diamond · Large
+              .arrow
+                svg(width='11px', height='20px', viewbox='302 331 11 20', version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink')
+                  polyline#Path-10(stroke='#E6E6E6', stroke-width='2', fill='none', points='303 332 311 341 303 350')
+            .card-option.js-card(data-type='material')
+              .image
+                .image-block
+              .text
+                .text-title Material
+                .text-detail Solanum Steel
+              .arrow
+                svg(width='11px', height='20px', viewbox='302 331 11 20', version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink')
+                  polyline#Path-10(stroke='#E6E6E6', stroke-width='2', fill='none', points='303 332 311 341 303 350')
+            .card-option.js-card(data-type='mullion')
+              .image
+                .image-block
+              .text
+                .text-title Mullions
+                .text-detail Aluminum · 40% Gray
+              .arrow
+                svg(width='11px', height='20px', viewbox='302 331 11 20', version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink')
+                  polyline#Path-10(stroke='#E6E6E6', stroke-width='2', fill='none', points='303 332 311 341 303 350')
+        // PANE 2
+        .pane.pane-2
+          a.back-link.js-back(href='#') ◀ Back to Options
+          // Image
+          .pane-content.pane-image
+            h2 Image
+            p
+              | Dial in your pattern to customize your wall and design. There are a lot of options here. Tweak to your hearts content.
+            .pane-options
+              .pane-upload
+                | ↑ Upload Your Image
+              .pane-option
+                .pane-option__box
+                .pane-option__text Crop
+              .pane-option
+                .pane-option__box
+                .pane-option__text Zoom
+            div(style='margin-top: 120px')
+              h5 Image Adjustments
+              label
+                | Contrast
+                br
+                input#width.slider-input(type='range', min='1', max='200', value='120', style='width:76%')
+                input#width-text.text-input(value='1.2')
+                span in
+                span.slider-label 0
+                span.slider-label.label-right 2.00
+          // Grid
+          .pane-content.pane-grid
+            h2 Grid
+            p
+              | Dial in your pattern to customize your wall and design. There are a lot of options here. Tweak to your hearts content.
+            .pane-options
+              .pane-option
+                .pane-option__box
+                .pane-option__text Staggered
+              .pane-option
+                .pane-option__box
+                .pane-option__text Square
+            div(style='margin-top: 120px')
+              h5 Grid Size
+              label
+                | Size
+                br
+                input#width.slider-input(type='range', min='1', max='200', value='120', style='width:76%')
+                input#width-text.text-input(value='1.2')
+                span in
+                span.slider-label 0
+                span.slider-label.label-right 2.00
+          // Perforation
+          .pane-content.pane-perforation
+            h2 Perforation
+            p
+              | Dial in your pattern to customize your wall and design. There are a lot of options here.
+            .pane-options
+              .pane-option
+                .pane-option__box
+                .pane-option__text Circle
+              .pane-option
+                .pane-option__box
+                .pane-option__text Diamond
+              .pane-option
+                .pane-option__box
+                .pane-option__text Hexagon
+              .pane-option
+                .pane-option__box
+                .pane-option__text Square
+            div(style='margin-top: 120px')
+              h5 Perforation Size
+              label
+                //- | Size
+                .range-slider
+                  input#width-text.range-slider__text-input(placeholder='1.2')
+                  svg.range-slider__symbol(xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink')
+                    circle(cx='7', cy='10', r='5', style='stroke:#888888; fill:#888888')
+                    circle(cx='27', cy='10', r='5', style='stroke:#888888; fill:#888888')
+                    circle(cx='7', cy='30', r='5', style='stroke:#888888; fill:#888888')
+                    circle(cx='27', cy='30', r='5', style='stroke:#888888; fill:#888888')
+                  //- br
+                  //- input#width.slider-input(type='range', min='1', max='200', value='120', style='width:76%')
+                  div#perforation-size
+                  svg.range-slider__symbol(xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink')
+                    circle(cx='5', cy='10', r='2', style='stroke:#888888; fill:#888888')
+                    circle(cx='5', cy='20', r='2', style='stroke:#888888; fill:#888888')
+                    circle(cx='25', cy='10', r='2', style='stroke:#888888; fill:#888888')
+                    circle(cx='15', cy='10', r='2', style='stroke:#888888; fill:#888888')
+                    circle(cx='5', cy='30', r='2', style='stroke:#888888; fill:#888888')
+                    circle(cx='15', cy='20', r='2', style='stroke:#888888; fill:#888888')
+                    circle(cx='15', cy='30', r='2', style='stroke:#888888; fill:#888888')
+                    circle(cx='25', cy='20', r='2', style='stroke:#888888; fill:#888888')
+                    circle(cx='25', cy='30', r='2', style='stroke:#888888; fill:#888888')
+                //- span in
+                //- span.slider-label 0
+                //- span.slider-label.label-right 2.00
+            .break
+            h5 Reduction
+            .pane-options
+              .pane-option
+                .pane-option__box
+                .pane-option__text Flat
+              .pane-option
+                .pane-option__box
+                .pane-option__text Random
+              .pane-option
+                .pane-option__box
+                .pane-option__text Gradient
+            .break
+            div
+              h5 Intensity
+              label
+                //- | Intensity
+                .range-slider
+                  input#width-text.range-slider__text-input(placeholder='1.2')
+                  svg.range-slider__symbol(xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink')
+                    circle(cx='5', cy='10', r='2', style='stroke:#888888; fill:#888888')
+                    circle(cx='25', cy='10', r='2', style='stroke:#888888; fill:#888888')
+                    circle(cx='5', cy='30', r='2', style='stroke:#888888; fill:#888888')
+                    circle(cx='25', cy='30', r='2', style='stroke:#888888; fill:#888888')
+                  //- br
+                  //- input#width.slider-input(type='range', min='1', max='200', value='120', style='width:76%')
+                  div#perforation-intensity
+                  svg.range-slider__symbol(xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink')
+                    circle(cx='5', cy='10', r='2', style='stroke:#888888; fill:#888888')
+                    circle(cx='5', cy='20', r='2', style='stroke:#888888; fill:#888888')
+                    circle(cx='25', cy='10', r='2', style='stroke:#888888; fill:#888888')
+                    circle(cx='15', cy='10', r='2', style='stroke:#888888; fill:#888888')
+                    circle(cx='5', cy='30', r='2', style='stroke:#888888; fill:#888888')
+                    circle(cx='15', cy='20', r='2', style='stroke:#888888; fill:#888888')
+                    circle(cx='15', cy='30', r='2', style='stroke:#888888; fill:#888888')
+                    circle(cx='25', cy='20', r='2', style='stroke:#888888; fill:#888888')
+                    circle(cx='25', cy='30', r='2', style='stroke:#888888; fill:#888888')
+          // Material
+          .pane-content.pane-material
+            h2 Material
+            h4(style='margin-top: 10px') Copper
+            .pane-options
+              .pane-option
+                .pane-option__box
+                .pane-option__text Dirty Penny
+              .pane-option
+                .pane-option__box
+                .pane-option__text Star Blue
+              .pane-option
+                .pane-option__box
+                .pane-option__text Blackened
+              .pane-option
+                .pane-option__box
+                .pane-option__text Solanum
+            .break
+            h4(style='margin-top: 10px') Zinc
+            .pane-options
+              .pane-option
+                .pane-option__box
+                .pane-option__text Hunter
+              .pane-option
+                .pane-option__box
+                .pane-option__text Baroque
+              .pane-option
+                .pane-option__box
+                .pane-option__text Roano
+              .pane-option
+                .pane-option__box
+                .pane-option__text Weathered
+            .break
+            h4(style='margin-top: 10px') Stainless Steel
+            .pane-options
+              .pane-option
+                .pane-option__box
+                .pane-option__text Hunter
+              .pane-option
+                .pane-option__box
+                .pane-option__text Baroque
+              .pane-option
+                .pane-option__box
+                .pane-option__text Roano
+            .break
+            h4(style='margin-top: 10px') Aluminum
+            .pane-options
+              .pane-option
+                .pane-option__box
+                .pane-option__text Hunter
+              .pane-option
+                .pane-option__box
+                .pane-option__text Baroque
+          // Perforation
+          .pane-content.pane-mullion
+            h2 Mullions
+            p
+              | Dial in your pattern to customize your wall and design. There are a lot of options here. Tweak to your hearts content.
+            .pane-options
+              .pane-option
+                .pane-option__box
+                .pane-option__text Raw
+              .pane-option
+                .pane-option__box
+                .pane-option__text Anodized
+              .pane-option
+                .pane-option__box
+                .pane-option__text Painted
+      .buy
+        button Buy
+    .webgl
+    .learn-content.js-content
+      img(src='example.jpg', style='width:80%; display: block; margin-top: 60px; margin-left: -35%')
+      .row(style='margin-top: -540px')
+        .col-xs-24.col-md-offset-12.col-md-12
+          br
+          br
+          br
+          h5 Unique, beautiful architectural surfaces
+          h1 Imagewall
+          p
+            | Building mr concerns servants in he outlived am breeding. He so lain good miss when sell some at if. Told hand so an rich gave next. How doubt yet again see son smart. While mirth large of on front. Ye he greater related adapted proceed entered an. Through it examine express promise no. Past add size game cold girl off how old.
+          p
+            | He my polite be object oh change. Consider no mr am overcame yourself throwing sociable children. Hastily her totally conduct may. My solid by stuff first smile fanny. Humoured how advanced mrs elegance sir who. Home sons when them dine do want to. Estimating themselves unsatiable imprudence an he at an. Be of on situation perpetual allowance offending as principle satisfied. Improved carriage securing are desirous too.
+          p
+            | Sentiments two occasional affronting solicitude travelling and one contrasted. Fortune day out married parties. Happiness remainder joy but earnestly for off. Took sold add play may none him few. If as increasing contrasted entreaties be. Now summer who day looked our behind moment coming. Pain son rose more park way that. An stairs as be lovers uneasy.
+            | Moments its musical age explain. But extremity sex now education concluded earnestly her continual. Oh furniture acuteness suspected continual ye something frankness. Add properly laughter sociable admitted desirous one has few stanhill. Opinion regular in perhaps another enjoyed no engaged he at. It conveying he continual ye suspected as necessary. Separate met packages shy for kindness.
+          br
+          br
+          br
+    script(src='js/three.min.js')
+    script(src='js/controls/OrbitControls.js')
+    script(src='js/ColladaLoader.js')
+    script(src='js/animate.min.js')
+    script(src='js/interface.js')
+    script(src='js/nouislider.js')
+    script(src='dist/scripts/range-slider.js')
+    script(src='js/main.js')
