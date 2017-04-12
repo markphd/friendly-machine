@@ -12,22 +12,31 @@
 
 .range-slider__text-input {
   position: absolute;
+  top: -20px;
   width: 25px;
-  right: 10px;
-  top: -25px;
   border: none;
   color: #888888;
   cursor: pointer;
+  font-size: 0.75em;
 }
 
-.range-slider::before {
-  content: '"';
-  top: -25px;
-  right: 1px;
-  position: absolute;
-  width: 10px;
-  color: #888888;
+
+.range-slider__text-input-lower {
+  right: 40px;
 }
+
+.range-slider__text-input-higher {
+  right: 10px;
+}
+
+// .range-slider::before {
+//   content: '"';
+//   top: -25px;
+//   right: 1px;
+//   position: absolute;
+//   width: 10px;
+//   color: #888888;
+// }
 
 .range-slider__symbol {
   display: inline-block;
