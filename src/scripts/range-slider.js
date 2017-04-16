@@ -32,7 +32,7 @@ noUiSlider.create(imageContrast, {
 });
 
 noUiSlider.create(gridSize, {
-  start: [20,80],
+  start: [50],
   connect: true,
   range: {
     min: 1,
