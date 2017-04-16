@@ -46,6 +46,15 @@
   clear: bottom;
 }
 
+#wall-width, #wall-height {
+  width: 50%;
+}
+
+.wall-size__column {
+  display: inline-block;
+  width: 130px;
+}
+
 #perforation-size, #perforation-intensity {
   // 1.) EXTRA MARGIN BELOW RANGE SLIDER
   margin: 4% 1%;
