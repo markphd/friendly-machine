@@ -44,6 +44,8 @@
   width: 40px;
   float: left;
   clear: bottom;
+  fill: #888888;
+  stroke: #888888;
 }
 
 #wall-width, #wall-height {
@@ -64,6 +66,8 @@
   display: inline-block;
   float: left;
   margin: 4px 10px 15px 1px;
+  stroke-width: 1;
+  stroke: #888888;
 }
 
 #perforation-size, #perforation-intensity {
