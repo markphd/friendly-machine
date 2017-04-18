@@ -7,37 +7,40 @@ var perforationSize = document.getElementById('perforation-size');
 var perforationIntensity = document.getElementById('perforation-intensity');
 
 noUiSlider.create(wallWidth, {
-  start: [ 4000 ],
+  start: [ 40 ],
+    connect: [true, false],
     range: {
-      'min': [  2000 ],
-      'max': [ 10000 ]
+      'min': [  0 ],
+      'max': [ 100 ]
     }
 });
 
 noUiSlider.create(wallHeight, {
-  start: [ 4000 ],
+  start: [ 40 ],
+    connect: [true, false],
     range: {
-      'min': [  2000 ],
-      'max': [ 10000 ]
+      'min': [  0 ],
+      'max': [ 100 ]
     }
 });
 
 
 noUiSlider.create(imageContrast, {
-  start: [ 4000 ],
+  start: [ 40 ],
+    connect: [true, false],
     range: {
-      'min': [  2000 ],
-      'max': [ 10000 ]
+      'min': [  0 ],
+      'max': [ 100 ]
     }
 });
 
 noUiSlider.create(gridSize, {
-  start: [50],
-  connect: true,
-  range: {
-    min: 1,
-    max: 200
-  }
+  start: [ 50 ],
+    connect: [true, false],
+    range: {
+      'min': [  0 ],
+      'max': [ 100 ]
+    }
 });
 
 noUiSlider.create(perforationSize, {
