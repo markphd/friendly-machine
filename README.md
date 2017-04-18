@@ -15,5 +15,8 @@
     ✔ - Copy assets from mockup site via `wget`
     ✔ - Setup local dev to use Gulp, SASS, Pug, BrowserSync
     ✔ - Implement noUiSlider in Perforaton panel
-    ❑ - Review mockup and implementation with Moe
+    ✔ - Review mockup and implementation with Moe
+    ✔ - Make left slide of single slider solid
+    ❑ - Adjust SVG color to match mockup
+    ❑ - Make base slider the same height as mockup (4px)
     ❑ - Rewrite CSS class to match BEM
