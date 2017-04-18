@@ -4,6 +4,12 @@
  * You don't need to change these rules to apply your design.
  */
 
+// COLORS
+$primary-color: #0F1110;
+$accent-color-light: #FFBA43;
+$accent-color-dark: #FF8546;
+$accent-color-text: #F2BB5B;
+
 
 //CUSTOMIZATION FOR DIXONANDMOE
 .range-slider {
@@ -15,7 +21,7 @@
   top: -13px;
   width: 25px;
   border: none;
-  color: #0f1110;
+  color: $primary-color;
   cursor: pointer;
   font-size: 0.75em;
 }
@@ -44,8 +50,8 @@
   width: 40px;
   float: left;
   clear: bottom;
-  fill: #888888;
-  stroke: #888888;
+  fill: $primary-color;
+  stroke: $primary-color;
 }
 
 #wall-width, #wall-height {
@@ -67,7 +73,7 @@
   float: left;
   margin: 4px 10px 15px 1px;
   stroke-width: 1;
-  stroke: #0f1110;
+  stroke: $primary-color;
 }
 
 #perforation-size, #perforation-intensity {
@@ -181,7 +187,7 @@
   // box-shadow: inset 0 1px 1px #F0F0F0, 0 3px 6px -5px #BBB;
 }
 .noUi-connect {
-  background: #0f1110;
+  background: $primary-color;
   box-shadow: inset 0 0 3px rgba(51, 51, 51, 0.45);
   -webkit-transition: background 150ms;
   transition: background 150ms;
@@ -199,7 +205,7 @@
   cursor: ns-resize;
 }
 .noUi-handle {
-  border: 2px solid #0f1110;
+  border: 2px solid $primary-color;
   border-radius: 100%;
   background: #FFF;
   cursor: default;
@@ -237,7 +243,7 @@
 /* Disabled state;
  */
 [disabled] .noUi-connect {
-  background: #0f1110;
+  background: $primary-color;
 }
 [disabled].noUi-target,
 [disabled].noUi-handle,
