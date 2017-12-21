@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="dist/css/range-slider.css">
+  </head>
+  <body>
+    <nav>
+      <div>Imagewall</div>
+    </nav>
+    <div class="view-buttons">
+      <button class="js-app">App Mode</button><span>ZOOM</span>
+      <button class="js-minus">-</button>
+      <button class="js-plus">+</button>
+    </div>
+    <div class="menu">
+      <div class="menu-title">
+        <div class="menu-title__name">Untitled Imagewall...</div>
+        <div class="menu-title__application">Freestanding Application
+          <svg width="8px" height="6px" viewbox="221 125 8 6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <polyline id="Path-15" stroke="#979797" stroke-width="2" fill="none" points="222 126 225 129 228 126"></polyline>
+          </svg>
+        </div>
+      </div>
+      <div class="panes">
+        <!-- PANE 1-->
+        <div class="pane pane-1">
+          <h5>Wall Size </h5>
+          <label class="wall-size__column">Width
+            <div class="range-slider">
+              <input class="range-slider__text-input range-slider__text-input-higher" id="width-text" placeholder="8ft">
+              <svg class="wall-size__symbol" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%">
+                <line x1="1" y1="1" x2="20" y2="1"></line>
+                <line x1="1" y1="20" x2="20" y2="20"></line>
+                <line x1="1" y1="20" x2="1" y2="1"></line>
+                <line x1="20" y1="1" x2="20" y2="20"></line>
+                <line x1="10" y1="1" x2="10" y2="20"></line>
+              </svg>
+              <div id="wall-width"></div>
+            </div>
+          </label>
+          <label class="wall-size__column">Height
+            <div class="range-slider">
+              <input class="range-slider__text-input range-slider__text-input-higher" id="width-text" placeholder="8ft">
+              <svg class="wall-size__symbol" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%">
+                <line x1="1" y1="1" x2="20" y2="1"></line>
+                <line x1="1" y1="20" x2="20" y2="20"></line>
+                <line x1="1" y1="20" x2="1" y2="1"></line>
+                <line x1="20" y1="1" x2="20" y2="20"></line>
+                <line x1="1" y1="10" x2="20" y2="10"></line>
+              </svg>
+              <div id="wall-height"></div>
+            </div>
+          </label>
+          <div>
+            <h5 class="card-options__label">Image or Pattern</h5>
+            <div class="card-option js-card" data-type="image">
+              <div class="image">
+                <div class="image-block"></div>
+              </div>
+              <div class="text">
+                <div class="text-title">Custom Image</div>
+                <div class="text-detail">Crop-to-Fit · Contrasted</div>
+              </div>
+              <div class="arrow">
+                <svg width="11px" height="20px" viewbox="302 331 11 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <polyline id="Path-10" stroke="#E6E6E6" stroke-width="2" fill="none" points="303 332 311 341 303 350"></polyline>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="card-options">
+            <h5 class="card-options__label">Options</h5>
+            <div class="card-option js-card" data-type="grid">
+              <div class="image">
+                <div class="image-block"></div>
+              </div>
+              <div class="text">
+                <div class="text-title">Grid</div>
+                <div class="text-detail">Staggered · Contrasted</div>
+              </div>
+              <div class="arrow">
+                <svg width="11px" height="20px" viewbox="302 331 11 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <polyline id="Path-10" stroke="#E6E6E6" stroke-width="2" fill="none" points="303 332 311 341 303 350"></polyline>
+                </svg>
+              </div>
+            </div>
+            <div class="card-option js-card" data-type="perforation">
+              <div class="image">
+                <div class="image-block"></div>
+              </div>
+              <div class="text">
+                <div class="text-title">Perforation</div>
+                <div class="text-detail">Diamond · Large</div>
+              </div>
+              <div class="arrow">
+                <svg width="11px" height="20px" viewbox="302 331 11 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <polyline id="Path-10" stroke="#E6E6E6" stroke-width="2" fill="none" points="303 332 311 341 303 350"></polyline>
+                </svg>
+              </div>
+            </div>
+            <div class="card-option js-card" data-type="material">
+              <div class="image">
+                <div class="image-block"></div>
+              </div>
+              <div class="text">
+                <div class="text-title">Material</div>
+                <div class="text-detail">Solanum Steel</div>
+              </div>
+              <div class="arrow">
+                <svg width="11px" height="20px" viewbox="302 331 11 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <polyline id="Path-10" stroke="#E6E6E6" stroke-width="2" fill="none" points="303 332 311 341 303 350"></polyline>
+                </svg>
+              </div>
+            </div>
+            <div class="card-option js-card" data-type="mullion">
+              <div class="image">
+                <div class="image-block"></div>
+              </div>
+              <div class="text">
+                <div class="text-title">Mullions</div>
+                <div class="text-detail">Aluminum · 40% Gray</div>
+              </div>
+              <div class="arrow">
+                <svg width="11px" height="20px" viewbox="302 331 11 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <polyline id="Path-10" stroke="#E6E6E6" stroke-width="2" fill="none" points="303 332 311 341 303 350"></polyline>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- PANE 2-->
+        <div class="pane pane-2"><a class="back-link js-back" href="#">◀ Back to Options</a>
+          <!-- Image-->
+          <div class="pane-content pane-image">
+            <h2>Image</h2>
+            <p>Dial in your pattern to customize your wall and design. There are a lot of options here. Tweak to your hearts content.</p>
+            <div class="pane-options">
+              <div class="pane-upload">↑ Upload Your Image</div>
+              <div class="pane-option">
+                <div class="pane-option__box"></div>
+                <div class="pane-option__text">Crop</div>
+              </div>
+              <div class="pane-option">
+                <div class="pane-option__box"></div>
+                <div class="pane-option__text">Zoom</div>
+              </div>
+            </div>
+            <div style="margin-top: 120px;">
+              <h5>Image Adjustments</h5>
+              <label>Contrast<br>
+                <div class="range-slider">
+                  <input class="range-slider__text-input range-slider__text-input-higher" id="width-text" placeholder="1.2in">
+                  <div id="image-contrast"></div>
+                </div>
+              </label>
+            </div>
+          </div>
+          <!-- Grid-->
+          <div class="pane-content pane-grid">
+            <h2>Grid</h2>
+            <p>Dial in your pattern to customize your wall and design. There are a lot of options here. Tweak to your hearts content.</p>
+            <div class="pane-options">
+              <div class="pane-option">
+                <div class="pane-option__box"></div>
+                <div class="pane-option__text">Staggered</div>
+              </div>
+              <div class="pane-option">
+                <div class="pane-option__box"></div>
+                <div class="pane-option__text">Square</div>
+              </div>
+            </div>
+            <div style="margin-top: 120px;">
+              <h5>Grid Size</h5>
+              <label>Size<br>
+                <div class="range-slider">
+                  <input class="range-slider__text-input range-slider__text-input-higher" id="width-text" placeholder="1.2in">
+                  <div id="grid-size"></div>
+                </div>
+              </label>
+            </div>
+          </div>
+          <!-- Perforation-->
+          <div class="pane-content pane-perforation">
+            <h2>Perforation</h2>
+            <p>Dial in your pattern to customize your wall and design. There are a lot of options here.</p>
+            <div class="pane-options">
+              <div class="pane-option">
+                <div class="pane-option__box"></div>
+                <div class="pane-option__text">Circle</div>
+              </div>
+              <div class="pane-option">
+                <div class="pane-option__box"></div>
+                <div class="pane-option__text">Diamond</div>
+              </div>
+              <div class="pane-option">
+                <div class="pane-option__box"></div>
+                <div class="pane-option__text">Hexagon</div>
+              </div>
+              <div class="pane-option">
+                <div class="pane-option__box"></div>
+                <div class="pane-option__text">Square</div>
+              </div>
+            </div>
+            <div style="margin-top: 120px;">
+              <h5>Perforation Size</h5>
+              <label>
+                <div class="range-slider">
+                  <input class="range-slider__text-input range-slider__text-input-lower" id="width-text" placeholder="1.2in">
+                  <input class="range-slider__text-input range-slider__text-input-higher" id="width-text" placeholder="1.2in">
+                  <svg class="range-slider__symbol" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <circle cx="7" cy="10" r="5"></circle>
+                    <circle cx="27" cy="10" r="5"></circle>
+                    <circle cx="7" cy="30" r="5"></circle>
+                    <circle cx="27" cy="30" r="5"></circle>
+                  </svg>
+                  <div id="perforation-size"></div>
+                  <svg class="range-slider__symbol" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <circle cx="5" cy="10" r="2"></circle>
+                    <circle cx="5" cy="20" r="2"></circle>
+                    <circle cx="25" cy="10" r="2"></circle>
+                    <circle cx="15" cy="10" r="2"></circle>
+                    <circle cx="5" cy="30" r="2"></circle>
+                    <circle cx="15" cy="20" r="2"></circle>
+                    <circle cx="15" cy="30" r="2"></circle>
+                    <circle cx="25" cy="20" r="2"></circle>
+                    <circle cx="25" cy="30" r="2"></circle>
+                  </svg>
+                </div>
+              </label>
+            </div>
+            <div class="break"></div>
+            <h5>Reduction</h5>
+            <div class="pane-options">
+              <div class="pane-option">
+                <div class="pane-option__box"></div>
+                <div class="pane-option__text">Flat</div>
+              </div>
+              <div class="pane-option">
+                <div class="pane-option__box"></div>
+                <div class="pane-option__text">Random</div>
+              </div>
+              <div class="pane-option">
+                <div class="pane-option__box"></div>
+                <div class="pane-option__text">Gradient</div>
+              </div>
+            </div>
+            <div class="break"></div>
+            <div>
+              <h5>Intensity</h5>
+              <label>
+                <div class="range-slider">
+                  <input class="range-slider__text-input range-slider__text-input-lower" id="width-text" placeholder="1.2in">
+                  <input class="range-slider__text-input range-slider__text-input-higher" id="width-text" placeholder="1.2in">
+                  <svg class="range-slider__symbol" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <circle cx="5" cy="10" r="2"></circle>
+                    <circle cx="25" cy="10" r="2"></circle>
+                    <circle cx="5" cy="30" r="2"></circle>
+                    <circle cx="25" cy="30" r="2"></circle>
+                  </svg>
+                  <div id="perforation-intensity"></div>
+                  <svg class="range-slider__symbol" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <circle cx="5" cy="10" r="2"></circle>
+                    <circle cx="5" cy="20" r="2"></circle>
+                    <circle cx="25" cy="10" r="2"></circle>
+                    <circle cx="15" cy="10" r="2"></circle>
+                    <circle cx="5" cy="30" r="2"></circle>
+                    <circle cx="15" cy="20" r="2"></circle>
+                    <circle cx="15" cy="30" r="2"></circle>
+                    <circle cx="25" cy="20" r="2"></circle>
+                    <circle cx="25" cy="30" r="2"></circle>
+                  </svg>
+                </div>
+              </label>
+            </div>
+          </div>
+          <!-- Material-->
+          <div class="pane-content pane-material">
+            <h2>Material</h2>
+            <h4 style="margin-top: 10px;">Copper</h4>
+            <div class="pane-options">
+              <div class="pane-option">
+                <div class="pane-option__box"></div>
+                <div class="pane-option__text">Dirty Penny</div>
+              </div>
+              <div class="pane-option">
+                <div class="pane-option__box"></div>
+                <div class="pane-option__text">Star Blue</div>
+              </div>
+              <div class="pane-option">
+                <div class="pane-option__box"></div>
+                <div class="pane-option__text">Blackened</div>
+              </div>
+              <div class="pane-option">
+                <div class="pane-option__box"></div>
+                <div class="pane-option__text">Solanum</div>
+              </div>
+            </div>
+            <div class="break"></div>
+            <h4 style="margin-top: 10px;">Zinc</h4>
+            <div class="pane-options">
+              <div class="pane-option">
+                <div class="pane-option__box"></div>
+                <div class="pane-option__text">Hunter</div>
+              </div>
+              <div class="pane-option">
+                <div class="pane-option__box"></div>
+                <div class="pane-option__text">Baroque</div>
+              </div>
+              <div class="pane-option">
+                <div class="pane-option__box"></div>
+                <div class="pane-option__text">Roano</div>
+              </div>
+              <div class="pane-option">
+                <div class="pane-option__box"></div>
+                <div class="pane-option__text">Weathered</div>
+              </div>
+            </div>
+            <div class="break"></div>
+            <h4 style="margin-top: 10px;">Stainless Steel</h4>
+            <div class="pane-options">
+              <div class="pane-option">
+                <div class="pane-option__box"></div>
+                <div class="pane-option__text">Hunter</div>
+              </div>
+              <div class="pane-option">
+                <div class="pane-option__box"></div>
+                <div class="pane-option__text">Baroque</div>
+              </div>
+              <div class="pane-option">
+                <div class="pane-option__box"></div>
+                <div class="pane-option__text">Roano</div>
+              </div>
+            </div>
+            <div class="break"></div>
+            <h4 style="margin-top: 10px;">Aluminum</h4>
+            <div class="pane-options">
+              <div class="pane-option">
+                <div class="pane-option__box"></div>
+                <div class="pane-option__text">Hunter</div>
+              </div>
+              <div class="pane-option">
+                <div class="pane-option__box"></div>
+                <div class="pane-option__text">Baroque</div>
+              </div>
+            </div>
+          </div>
+          <!-- Perforation-->
+          <div class="pane-content pane-mullion">
+            <h2>Mullions</h2>
+            <p>Dial in your pattern to customize your wall and design. There are a lot of options here. Tweak to your hearts content.</p>
+            <div class="pane-options">
+              <div class="pane-option">
+                <div class="pane-option__box"></div>
+                <div class="pane-option__text">Raw</div>
+              </div>
+              <div class="pane-option">
+                <div class="pane-option__box"></div>
+                <div class="pane-option__text">Anodized</div>
+              </div>
+              <div class="pane-option">
+                <div class="pane-option__box"></div>
+                <div class="pane-option__text">Painted</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="buy">
+        <button>Buy</button>
+      </div>
+    </div>
+    <div class="webgl"></div>
+    <div class="learn-content js-content"><img src="example.jpg" style="width:80%; display: block; margin-top: 60px; margin-left: -35%;">
+      <div class="row" style="margin-top: -540px;">
+        <div class="col-xs-24 col-md-offset-12 col-md-12"><br><br><br>
+          <h5>Unique, beautiful architectural surfaces</h5>
+          <h1>Imagewall</h1>
+          <p>Building mr concerns servants in he outlived am breeding. He so lain good miss when sell some at if. Told hand so an rich gave next. How doubt yet again see son smart. While mirth large of on front. Ye he greater related adapted proceed entered an. Through it examine express promise no. Past add size game cold girl off how old.</p>
+          <p>He my polite be object oh change. Consider no mr am overcame yourself throwing sociable children. Hastily her totally conduct may. My solid by stuff first smile fanny. Humoured how advanced mrs elegance sir who. Home sons when them dine do want to. Estimating themselves unsatiable imprudence an he at an. Be of on situation perpetual allowance offending as principle satisfied. Improved carriage securing are desirous too.</p>
+          <p>
+            Sentiments two occasional affronting solicitude travelling and one contrasted. Fortune day out married parties. Happiness remainder joy but earnestly for off. Took sold add play may none him few. If as increasing contrasted entreaties be. Now summer who day looked our behind moment coming. Pain son rose more park way that. An stairs as be lovers uneasy.
+            Moments its musical age explain. But extremity sex now education concluded earnestly her continual. Oh furniture acuteness suspected continual ye something frankness. Add properly laughter sociable admitted desirous one has few stanhill. Opinion regular in perhaps another enjoyed no engaged he at. It conveying he continual ye suspected as necessary. Separate met packages shy for kindness.
+          </p><br><br><br>
+        </div>
+      </div>
+    </div>
+    <script src="js/three.min.js"></script>
+    <script src="js/controls/OrbitControls.js"></script>
+    <script src="js/ColladaLoader.js"></script>
+    <script src="js/animate.min.js"></script>
+    <script src="js/interface.js"></script>
+    <script src="js/nouislider.js"></script>
+    <script src="dist/scripts/range-slider.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
